@@ -15,13 +15,13 @@ export default function Chat() {
         {conversation.map((m, index) => (
           <div className="flex flex-col" key={index}>
             <div
-              className={`flex my-2 ${m.role === "user" ? "justify-start" : "justify-end"}`}
+              className={`flex my-2 ${m.role === "user" ? "justify-end" : "justify-start"}`}
             >
-              {m.role === "user" ? (
+              {m.role === "assistant" ? (
                 <Avatar
                   radius="full"
                   className="mr-4"
-                  fallback="U"
+                  fallback="AI"
                   width={40}
                   height={40}
                 />

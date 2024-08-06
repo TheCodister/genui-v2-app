@@ -21,8 +21,8 @@ export async function MovieCard({
 
   return (
     <Link href={`${IMDB_URL}${movie.imdbID}`}>
-      <Card size="3" variant="surface" asChild>
-        <div className="py-4 w-[300px]">
+      <Card size="4" variant="surface" asChild className="flex flex-col">
+        <div className="py-4">
           <div className="flex gap-3 items-center">
             <Text size="2" className="uppercase font-bold">
               {movie.Genre}
@@ -43,10 +43,8 @@ export async function MovieCard({
           </Text>
           <img
             alt={`${movie.Title} Poster`}
-            className="object-cover rounded-xl"
+            className="w-full object-cover rounded-xl self-center"
             src={movie.Poster}
-            width={270}
-            height={400}
           />
           <Text size="2" className="mt-4">
             Description: {movie.Plot}
