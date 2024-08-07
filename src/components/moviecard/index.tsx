@@ -21,7 +21,12 @@ export async function MovieCard({
 
   return (
     <Link href={`${IMDB_URL}${movie.imdbID}`}>
-      <Card size="4" variant="surface" asChild className="flex flex-col">
+      <Card
+        size="4"
+        variant="surface"
+        asChild
+        className="flex flex-col min-w-[380px]"
+      >
         <div className="py-4">
           <div className="flex gap-3 items-center">
             <Text size="2" className="uppercase font-bold">

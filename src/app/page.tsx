@@ -36,16 +36,9 @@ export default function Chat() {
                 <Markdown>{m.content}</Markdown>
               </div>
             </div>
-            <div className="">{m.display}</div>
+            <div className="p-4">{m.display}</div>
           </div>
         ))}
-        {/* 
-        {isLoading && (
-          <div className="flex items-center justify-start my-2">
-            <span>AI: </span>
-            <Spinner className="ml-2" size="sm" />
-          </div>
-        )} */}
       </div>
 
       <form

@@ -69,7 +69,7 @@ export async function continueConversation(history: Message[]) {
           stream.update(
             <div className="flex gap-2 overflow-x-scroll">
               {searchResults
-                .slice(1, 6)
+                .slice(0, 5)
                 .map((movie: { imdbID: string; Title: string }) => (
                   <MovieCard key={movie.imdbID} movieTitle={movie.Title} />
                 ))}
