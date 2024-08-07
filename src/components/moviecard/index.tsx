@@ -32,7 +32,10 @@ export async function MovieCard({
             </Text>
           </div>
           <ul className="flex gap-3">
-            {movie.Ratings.slice(0, 2).map((rating, index) => (
+            {(movie.Ratings.length > 2
+              ? movie.Ratings.slice(0, 2)
+              : movie.Ratings
+            ).map((rating, index) => (
               <Text key={index} size="1" color="gray">
                 {rating.Source}: {rating.Value}
               </Text>
