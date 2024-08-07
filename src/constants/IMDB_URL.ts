@@ -1,1 +1,1 @@
-export const IMDB_URL = "https://www.imdb.com/title/";
+export const IMDB_URL = 'https://www.imdb.com/title/'

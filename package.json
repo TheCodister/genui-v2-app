@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.40",
+    "@dwarvesf/react-eslint-config": "^1.0.1",
     "@radix-ui/themes": "^3.1.1",
     "ai": "^3.3.0",
     "axios": "^1.7.3",
